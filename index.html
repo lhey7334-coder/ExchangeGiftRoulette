@@ -218,7 +218,7 @@ function spinWheel() {
         if (!startTime) startTime = time;
         const elapsed = time - startTime;
 
-        rotation = (elapsed / 2) * Math.PI / 180;
+        rotation = (elapsed / 0.2) * Math.PI / 180;
         drawWithRotation();
 
         if (elapsed < targetDeg * 0.2) {
@@ -264,5 +264,6 @@ document.getElementById("spinBtn").onclick = spinWheel;
 
 </body>
 </html>
+
 
 
