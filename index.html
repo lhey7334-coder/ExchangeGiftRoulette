@@ -221,7 +221,7 @@ function spinWheel() {
         rotation = (elapsed / 2) * Math.PI / 180;
         drawWithRotation();
 
-        if (elapsed < targetDeg * 1) {
+        if (elapsed < targetDeg * 0.2) {
             requestAnimationFrame(animate);
         } else {
             rotation = targetRad;
@@ -264,4 +264,5 @@ document.getElementById("spinBtn").onclick = spinWheel;
 
 </body>
 </html>
+
 
